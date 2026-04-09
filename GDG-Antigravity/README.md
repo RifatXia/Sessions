@@ -225,8 +225,7 @@ We'll load everyone's names into the wheel app and spin for prizes!
 | Place | Prize |
 |-------|-------|
 | 1st | $25 Amazon Gift Card |
-| 2nd | $15 Amazon Gift Card |
-| 3rd | $10 Amazon Gift Card |
+| 2nd | $25 Amazon Gift Card |
 
 ---
 
