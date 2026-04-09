@@ -18,7 +18,7 @@ Welcome! In this hands-on session, we'll explore Google's AI tools by building a
 | **Gemini API** | Google's AI model API for text, code, and more |
 | **Vertex AI** | Google Cloud's ML platform for production AI workloads |
 | **NotebookLM** | AI notebook that can generate images and video summaries |
-| **Nano Banana** | Image generation built into NotebookLM |
+| **Google AI Studio** | Free access to Gemini models with image generation |
 
 ---
 
@@ -112,17 +112,17 @@ In Antigravity, you have two ways to work with agents:
 
 Instead of one AI agent doing one thing, you can dispatch multiple agents working on different tasks at the same time. One agent builds your app, another writes tests, another writes docs — all in parallel.
 
-### Switch to Manager View
+### How It Works in Antigravity
 
-1. In Antigravity, click the **Manager View** toggle (top of the window)
-2. You'll see the **Agent Manager** dashboard — this is your command center
-3. Each agent you spin up is a **separate conversation thread**, but they all share the **same workspace folder** — so they can see each other's files
-4. The dashboard shows all your running agents side by side — their status, output, and any approvals they need from you
+1. When you open Antigravity, you're in the **Agent Manager** by default (you can toggle to Editor View with the **"Open Editor"** button in the top right, or press **Ctrl + E**)
+2. Each **conversation** you start under a workspace is an agent
+3. All conversations under the same workspace share the **same project folder** — so they can see each other's files
+4. You switch between agents by clicking on them in the **left sidebar**
 
 ### Dispatch Your First Agent
 
 1. Select your workspace folder
-2. Pick your model (Gemini 3 Pro recommended) and planning mode
+2. Pick your model (Gemini 3.1 Pro recommended) and planning mode
 3. Give it a task prompt, for example:
 
 ```
@@ -133,14 +133,14 @@ Give it a sleek and good UI.
 ```
 
 4. The agent will plan, write code, set up files, and run it — all on its own
-5. Watch the progress in the dashboard as it works through each step
+5. Watch the progress in the conversation as it works through each step
 
 ### Run Multiple Agents in Parallel
 
 This is the real magic. While your first agent is building the wheel app, spin up a second agent to build something else at the same time.
 
-1. Click **New Agent** in the Manager dashboard
-2. While Agent 1 is still building the wheel app, give Agent 2 this prompt:
+1. Click **+ New Conversation** in the left sidebar (this starts a second agent in the same workspace)
+2. While Agent 1 is still building the wheel app, give this new conversation the following prompt:
 
 ```
 Build a simple Python countdown timer web app.
@@ -148,39 +148,29 @@ It should have a clean UI with a big timer display, a text input to set minutes,
 Use Flask for the backend and vanilla JS for the frontend.
 ```
 
-3. Now watch both agents work simultaneously — one building the wheel, the other building the timer
-4. Both agents share the same workspace, so they're aware of each other's files
-5. If an agent needs your approval (e.g., to run a command), it will pause and ask
-
-### What You'll See in the Dashboard
-
-| Column | What It Shows |
-|--------|--------------|
-| **Status** | Running, Waiting for approval, or Done |
-| **Artifacts** | Plans, code files, diffs the agent produced |
-| **Requests** | Any pending actions that need your OK |
+3. Now both agents work simultaneously — one building the wheel, the other building the timer
+4. Switch between them in the **left sidebar** to check progress
+5. Both agents share the same workspace, so they can see each other's files
+6. If an agent needs your approval (e.g., to run a command), it will pause and ask
 
 ---
 
-## Stage 4: AI Image Generation with Nano Banana
+## Stage 4: AI Image Generation with Google AI Studio
 
-Now it's your turn to create something. We'll use NotebookLM's built-in image generator.
+Now it's your turn to create something. Google AI Studio lets you generate images for free using Gemini — no credit card or setup needed.
 
 ### Steps
 
-1. Go to [notebooklm.google.com](https://notebooklm.google.com)
+1. Go to [aistudio.google.com](https://aistudio.google.com)
 2. Sign in with your Google account
-3. Create a new notebook and upload any document (a flyer, article, anything fun)
-4. Click on **Generate** and explore the options:
-   - **Video Overview** - generates a short video summary of your doc
-   - **Styles** - try Anime, Whiteboard, Watercolor, Retro
-   - **Formats** - Brief vs. Explainer
-5. Generate a standalone image using a creative prompt. Try something like:
+3. In the chat, type a prompt that asks for an image. Try something like:
 
 ```
-A developer riding a rocket made of code through a galaxy of data
+Generate an image of a developer riding a rocket made of code through a galaxy of data
 ```
 
+4. Gemini will generate an image right in the chat
+5. Try different prompts — get creative!
 6. **Save or screenshot your generated image** - you'll need it for the next step!
 
 ---
@@ -192,7 +182,7 @@ Time to enter the prize drawing.
 1. Open the Google Form: [YOUR_FORM_LINK]
 2. Fill in:
    - **Your Name** (required)
-   - **Upload your Nano Banana Image** (required)
+   - **Upload your AI-generated Image** (required)
 3. Hit Submit
 
 Your name will be added to the spinning wheel for the prize drawing!
