@@ -6,6 +6,8 @@ Welcome! In this hands-on session, we'll explore Google's AI tools by building a
 
 **Hackathon:** [Build with AI - CS Edition on Devpost](https://build-with-ai-cs.devpost.com/)
 
+![Event Banner](GDG%20UpShow.png)
+
 ---
 
 ## What We're Using Today
