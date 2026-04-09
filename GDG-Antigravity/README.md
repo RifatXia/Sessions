@@ -4,6 +4,8 @@
 
 Welcome! In this hands-on session, we'll explore Google's AI tools by building a live app, generating AI images, and spinning a wheel to win prizes. Follow along step by step below.
 
+**Slides:** [Google Slides](https://docs.google.com/presentation/d/1XSMwdF8dOltfW1rQtjDsEH2QaSHz3dqyNp1tCgzMMSw/edit?slide=id.g3de23059259_1_45#slide=id.g3de23059259_1_45)
+
 **Hackathon:** [Build with AI - CS Edition on Devpost](https://build-with-ai-cs.devpost.com/)
 
 ![Event Banner](GDG%20UpShow.png)
