@@ -166,7 +166,7 @@ Now it's your turn to create something. Google AI Studio lets you generate image
 3. In the chat, type a prompt that asks for an image. Try something like:
 
 ```
-Generate an image of a developer riding a rocket made of code through a galaxy of data
+Generate an image of a cat wearing a tiny astronaut suit, floating in space next to the International Space Station, with Earth glowing in the background and a trail of yarn unraveling behind it
 ```
 
 4. Gemini will generate an image right in the chat
