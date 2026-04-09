@@ -39,7 +39,7 @@ Antigravity is Google's AI coding agent. It doesn't just autocomplete - it plans
 
 ---
 
-## Stage 2: Use Gemini from the Command Line
+## Stage 2: Use Gemini from the Command Line in Antigravity
 
 Gemini CLI lets you talk to Google's AI models right from your terminal. No browser needed.
 
@@ -96,7 +96,54 @@ python winner.py
 
 ---
 
-## Stage 3: AI Image Generation with Nano Banana
+## Stage 3: Multi-Agent Orchestration in Antigravity
+
+This is where it gets powerful. Instead of one AI agent doing one thing, you can dispatch multiple agents working on different tasks at the same time.
+
+### Switch to Manager View
+
+1. In Antigravity, click the **Manager View** toggle (top of the window)
+2. You'll see the **Agent Manager** dashboard — this is your command center
+
+### Dispatch Your First Agent
+
+1. Select your workspace folder
+2. Pick your model (Gemini 3 Pro recommended) and planning mode
+3. Give it a task prompt, for example:
+
+```
+Build a Python web app with a spinning Wheel of Names.
+It reads names from a names.txt file and displays an animated wheel.
+When spun, it randomly picks a winner and highlights it.
+```
+
+4. The agent will plan, write code, set up files, and run it — all on its own
+5. Watch the progress in the dashboard as it works through each step
+
+### Run Multiple Agents in Parallel
+
+This is the real magic. While your first agent is building the wheel app, you can spin up more agents:
+
+1. Click **New Agent** in the Manager dashboard
+2. Give each agent a different task, for example:
+   - **Agent 1:** Build the wheel app (already running)
+   - **Agent 2:** `"Write unit tests for a Python Flask app that reads from a text file"`
+   - **Agent 3:** `"Create a README.md with setup instructions for a Flask wheel app"`
+
+3. All agents work simultaneously — you can see their status, artifacts, and diffs in real time
+4. If an agent needs your approval (e.g., to run a command), it will pause and ask
+
+### What You'll See in the Dashboard
+
+| Column | What It Shows |
+|--------|--------------|
+| **Status** | Running, Waiting for approval, or Done |
+| **Artifacts** | Plans, code files, diffs the agent produced |
+| **Requests** | Any pending actions that need your OK |
+
+---
+
+## Stage 4: AI Image Generation with Nano Banana
 
 Now it's your turn to create something. We'll use NotebookLM's built-in image generator.
 
@@ -119,7 +166,7 @@ A developer riding a rocket made of code through a galaxy of data
 
 ---
 
-## Stage 4: Submit Your Entry
+## Stage 5: Submit Your Entry
 
 Time to enter the prize drawing.
 
@@ -133,7 +180,7 @@ Your name will be added to the spinning wheel for the prize drawing!
 
 ---
 
-## Stage 5: Spin the Wheel & Win
+## Stage 6: Spin the Wheel & Win
 
 We'll load everyone's names into the wheel app and spin for prizes!
 
