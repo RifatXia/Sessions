@@ -45,13 +45,40 @@ Antigravity is Google's AI coding agent. It doesn't just autocomplete - it plans
 
 Gemini CLI lets you talk to Google's AI models right from your terminal. No browser needed.
 
+### Install Node.js (if you don't have it)
+
+Gemini CLI requires Node.js. Check if you already have it:
+
+```bash
+node --version
+```
+
+If you see a version number, you're good. If not, install it:
+
+**Windows:**
+1. Go to [nodejs.org](https://nodejs.org)
+2. Download the LTS installer (.msi)
+3. Run it and follow the prompts (keep defaults)
+4. Restart your terminal
+
+**Mac:**
+```bash
+brew install node
+```
+Or download the installer from [nodejs.org](https://nodejs.org)
+
+**Linux (Ubuntu/Debian):**
+```bash
+sudo apt update && sudo apt install nodejs npm
+```
+
 ### Install the Gemini CLI
 
 ```bash
 npm install -g @google/gemini-cli
 ```
 
-Or if you prefer using npx (no install):
+Or if you just want to try it without installing:
 
 ```bash
 npx @google/gemini-cli
