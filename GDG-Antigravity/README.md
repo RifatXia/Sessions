@@ -98,7 +98,17 @@ python winner.py
 
 ## Stage 3: Multi-Agent Orchestration in Antigravity
 
-This is where it gets powerful. Instead of one AI agent doing one thing, you can dispatch multiple agents working on different tasks at the same time.
+### What is an AI Agent?
+
+An AI agent is more than a chatbot. Instead of just answering questions, an agent can **plan steps, write code, run commands, read files, fix errors, and repeat** — all on its own until the task is done. Think of it as giving an intern a task and letting them figure out how to do it, while you just review the final work.
+
+In Antigravity, you have two ways to work with agents:
+- **Editor View** — you write code, and the AI helps you inline (like pair programming)
+- **Manager View** — you give a task in plain English, and the agent does everything autonomously (like delegating to a team)
+
+### Why Multiple Agents?
+
+Instead of one AI agent doing one thing, you can dispatch multiple agents working on different tasks at the same time. One agent builds your app, another writes tests, another writes docs — all in parallel.
 
 ### Switch to Manager View
 
