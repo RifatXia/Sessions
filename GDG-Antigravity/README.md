@@ -39,28 +39,60 @@ Antigravity is Google's AI coding agent. It doesn't just autocomplete - it plans
 
 ---
 
-## Stage 2: Build a Spinning Wheel App Live
+## Stage 2: Use Gemini from the Command Line
 
-We'll use Antigravity's Manager View to build a full web app from a single prompt.
+Gemini CLI lets you talk to Google's AI models right from your terminal. No browser needed.
 
-### Steps
+### Install the Gemini CLI
 
-1. Open Antigravity and switch to **Manager View**
-2. Paste this prompt:
-
-```
-Build a Python web app with a spinning Wheel of Names.
-It reads names from a names.txt file and displays an animated wheel.
-When spun, it randomly picks a winner and highlights it.
+```bash
+npm install -g @google/gemini-cli
 ```
 
-3. Watch it work - it will:
-   - Generate the frontend (HTML/CSS/JS)
-   - Create a Python backend (Flask or FastAPI)
-   - Set up file reading from `names.txt`
-   - Start a local dev server
-4. Once it's done, open the app in your browser (usually `http://localhost:5000` or similar)
-5. Try clicking the spin button!
+Or if you prefer using npx (no install):
+
+```bash
+npx @google/gemini-cli
+```
+
+### Sign In
+
+```bash
+gemini
+```
+
+It will open a browser window to authenticate with your Google account. Follow the prompts.
+
+### Try It Out
+
+Once you're in, just type a prompt:
+
+```
+Explain what an API is in 2 sentences.
+```
+
+### Use It to Build Something
+
+Ask Gemini to generate a simple Python script:
+
+```
+Write a Python script that reads names from a names.txt file and picks a random winner.
+```
+
+It will output the code right in your terminal. You can copy it into a file and run it:
+
+```bash
+python winner.py
+```
+
+### Useful Commands
+
+| Command | What It Does |
+|---------|-------------|
+| `gemini` | Start an interactive chat session |
+| `gemini "your prompt"` | One-shot prompt, get a response and exit |
+| `/model` | Switch between Gemini models (Pro, Flash, etc.) |
+| `/quit` | Exit the CLI |
 
 ---
 
