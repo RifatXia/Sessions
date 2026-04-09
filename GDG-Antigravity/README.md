@@ -114,6 +114,8 @@ Instead of one AI agent doing one thing, you can dispatch multiple agents workin
 
 1. In Antigravity, click the **Manager View** toggle (top of the window)
 2. You'll see the **Agent Manager** dashboard — this is your command center
+3. Each agent you spin up is a **separate conversation thread**, but they all share the **same workspace folder** — so they can see each other's files
+4. The dashboard shows all your running agents side by side — their status, output, and any approvals they need from you
 
 ### Dispatch Your First Agent
 
@@ -124,7 +126,8 @@ Instead of one AI agent doing one thing, you can dispatch multiple agents workin
 ```
 Build a Python web app with a spinning Wheel of Names.
 It reads names from a names.txt file and displays an animated wheel.
-When spun, it randomly picks a winner and highlights it.
+When spun, it randomly picks a winner and highlights it, we would be choosing multiple users, so when a person wins remove them from the wheel.
+Give it a sleek and good UI.
 ```
 
 4. The agent will plan, write code, set up files, and run it — all on its own
@@ -132,16 +135,20 @@ When spun, it randomly picks a winner and highlights it.
 
 ### Run Multiple Agents in Parallel
 
-This is the real magic. While your first agent is building the wheel app, you can spin up more agents:
+This is the real magic. While your first agent is building the wheel app, spin up a second agent to build something else at the same time.
 
 1. Click **New Agent** in the Manager dashboard
-2. Give each agent a different task, for example:
-   - **Agent 1:** Build the wheel app (already running)
-   - **Agent 2:** `"Write unit tests for a Python Flask app that reads from a text file"`
-   - **Agent 3:** `"Create a README.md with setup instructions for a Flask wheel app"`
+2. While Agent 1 is still building the wheel app, give Agent 2 this prompt:
 
-3. All agents work simultaneously — you can see their status, artifacts, and diffs in real time
-4. If an agent needs your approval (e.g., to run a command), it will pause and ask
+```
+Build a simple Python countdown timer web app.
+It should have a clean UI with a big timer display, a text input to set minutes, and start/pause/reset buttons.
+Use Flask for the backend and vanilla JS for the frontend.
+```
+
+3. Now watch both agents work simultaneously — one building the wheel, the other building the timer
+4. Both agents share the same workspace, so they're aware of each other's files
+5. If an agent needs your approval (e.g., to run a command), it will pause and ask
 
 ### What You'll See in the Dashboard
 

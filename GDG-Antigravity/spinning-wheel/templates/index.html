@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of Names</title>
+    <!-- Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Confetti JS for winning animation -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Random Name Picker</h1>
+            <p>Spin the wheel to choose a winner!</p>
+        </header>
+
+        <main class="wheel-section">
+            <div class="wheel-container">
+                <canvas id="wheel" width="500" height="500"></canvas>
+                <div class="pointer"></div>
+            </div>
+            
+            <div class="controls">
+                <button id="spin-btn" class="btn primary-btn">SPIN THE WHEEL</button>
+            </div>
+            
+            <div class="status-panel">
+                <h2 id="winner-display">Ready to Spin!</h2>
+                <div id="remaining-count">Loading names...</div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="winner-modal" class="modal hidden">
+        <div class="modal-content glass">
+            <h2>🎉 We have a winner! 🎉</h2>
+            <h1 id="modal-winner-name">Name</h1>
+            <p>They have been removed from the wheel.</p>
+            <button id="close-modal-btn" class="btn secondary-btn">Continue</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/wheel.js') }}"></script>
+</body>
+</html>
